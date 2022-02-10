@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Geolocation from './containers/Geolocation';
 
 function App() {
   return (
     <div className="App">
-      <p>Hello World</p>
+      <Geolocation />
     </div>
   );
 }
