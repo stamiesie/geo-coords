@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const Display = ({ latitude, longitude, refreshClick }) => (
   <div>
     Your current Geo-coordinates are:
-    <p>Latitude: {latitude}</p>
-    <p>Longitude: {longitude}</p>
+    <p>Latitude: {latitude}°</p>
+    <p>Longitude: {longitude}°</p>
     <button type="button" onClick={refreshClick}>
       &#10148; Refresh Location
     </button>

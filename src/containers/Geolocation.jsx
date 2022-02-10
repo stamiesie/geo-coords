@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Display from '../components/Display';
+import Loading from '../components/Loading';
 
 const Geolocation = () => {
   const [lat, setLat] = useState();
@@ -11,9 +12,10 @@ const Geolocation = () => {
       setLong(position.coords.longitude);
     });
   };
+
   useEffect(() => {
-    fetchLocation();
     console.log('Fetch on mount');
+    fetchLocation();
   }, []);
 
   const handleClick = () => {
@@ -21,7 +23,17 @@ const Geolocation = () => {
     console.log('Fetch on click');
   };
 
-  return <Display latitude={lat} longitude={long} refreshClick={handleClick} />;
+  return (
+    <div>
+      {typeof lat !== 'undefined' ? (
+        <Display latitude={lat} longitude={long} refreshClick={handleClick} />
+      ) : (
+        <Loading />
+      )}
+      {/* // return{' '}
+      <Display latitude={lat} longitude={long} refreshClick={handleClick} />; */}
+    </div>
+  );
 };
 
 export default Geolocation;
