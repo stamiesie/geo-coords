@@ -1,9 +1,9 @@
 import React from 'react';
-import loading from '../assets/loading2.gif';
+import loading from '../assets/loading3.gif';
 
 const Loading = () => (
   <div>
-    <img src={loading} alt="Loading..." />
+    <img src={loading} aria-label="Loading" alt="Loading..." />
   </div>
 );
 
