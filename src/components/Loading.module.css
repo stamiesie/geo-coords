@@ -1,0 +1,16 @@
+ .loading {
+      width: 300px;
+      padding: 30px;
+  }
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    .loading {
+      width: 200px;
+    }
+  }
+
+  @media all and (max-width: 599px) {
+    .loading {
+      width: 100px;
+    }
+  }
