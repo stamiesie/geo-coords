@@ -16,15 +16,12 @@ const Geolocation = () => {
   };
 
   useEffect(() => {
-    console.log('Fetch on mount');
     fetchLocation();
   }, []);
 
   const handleClick = () => {
     setLoading(true);
-    setLat();
     fetchLocation();
-    console.log('Fetch on click');
   };
 
   if (loading) return <Loading />;

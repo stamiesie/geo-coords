@@ -20,7 +20,7 @@ body {
   }
 }
 
-@media all and (min-width: 600px)and (max-width: 899px) {
+@media all and (min-width: 600px) and (max-width: 899px) {
   body {
     font-size: 1.5rem;
     color: blue;
@@ -32,7 +32,7 @@ body {
   }
 }
 
-@media all and (min-width: 900px)and (max-width: 2400px) {
+@media all and (min-width: 900px) and (max-width: 2400px) {
   body {
     font-size: 1.3rem;
     color: green;

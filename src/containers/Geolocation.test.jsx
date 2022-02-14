@@ -17,8 +17,6 @@ describe('Geolocation container', () => {
 
     render(<Geolocation />);
 
-    // screen.getByAltText('Loading...');
-
     const section = screen.getByRole('region', {
       name: 'coordinates',
     });
